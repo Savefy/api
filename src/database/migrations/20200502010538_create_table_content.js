@@ -10,10 +10,25 @@ exports.up = (knex) => knex.schema
       .increments();
 
     table
-      .string('url');
+      .string('sourceUrl');
+
+    table
+      .string('imageUrl');
 
     table
       .enum('type', ['text', 'video'])
+      .notNullable();
+
+    table
+      .string('title')
+      .notNullable();
+
+    table
+      .string('author')
+      .notNullable();
+
+    table
+      .text('body')
       .notNullable();
 
     table
