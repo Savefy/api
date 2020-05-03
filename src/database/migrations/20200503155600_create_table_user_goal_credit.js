@@ -5,7 +5,7 @@ const Knex = require('knex');
  * @param {Knex} knex
  */
 exports.up = (knex) => knex.schema
-  .createTable('groupGoalCredit', (table) => {
+  .createTable('userGoalCredit', (table) => {
     table
       .increments();
 
@@ -19,7 +19,7 @@ exports.up = (knex) => knex.schema
     table
       .integer('goalId')
       .references('id')
-      .inTable('groupGoal');
+      .inTable('userGoal');
 
     table
       .dateTime('date')
@@ -34,4 +34,4 @@ exports.up = (knex) => knex.schema
   });
 
 exports.down = (knex) => knex.schema
-  .dropTable('groupGoalCredit');
+  .dropTable('userGoalCredit');
