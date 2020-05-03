@@ -6,18 +6,21 @@ exports.seed = (knex) => knex('movement').del()
       value: 600,
       date: '2020-05-01T23:13:05Z',
       category: 'outros',
+      userId: 1,
     },
     {
       date: '2020-04-15T07:18:19.565Z',
       title: 'Recebido',
       type: 'credit',
       value: 10000,
+      userId: 1,
     },
     {
       date: '2020-02-15T07:18:19.565Z',
       title: 'Recebido',
       type: 'credit',
       value: 5000,
+      userId: 1,
     },
     {
       title: 'Picpay *Hospitaldeamo',
@@ -25,6 +28,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 1000,
       date: '2020-05-01T23:12:30Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Amazonprimebr',
@@ -32,6 +36,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 990,
       date: '2020-04-27T22:33:46Z',
       category: 'educação',
+      userId: 1,
     },
     {
       title: 'Panificadora Veneza',
@@ -39,6 +44,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 1700,
       date: '2020-04-27T21:45:11Z',
       category: 'alimentação',
+      userId: 1,
     },
     {
       title: 'Paypal *Kaikecerato',
@@ -46,6 +52,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 500,
       date: '2020-04-27T03:08:55Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Paypal *Kaikecerato',
@@ -53,6 +60,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 500,
       date: '2020-04-27T03:07:41Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Paypal do Brasil',
@@ -60,6 +68,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 50,
       date: '2020-04-27T03:07:26Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Vitor Hugo do Nascimen',
@@ -67,6 +76,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 2900,
       date: '2020-04-25T01:13:05Z',
       category: 'alimentação',
+      userId: 1,
     },
     {
       title: 'Gran Fornetto Pizzaria',
@@ -74,6 +84,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 3696,
       date: '2020-04-19T01:29:14Z',
       category: 'alimentação',
+      userId: 1,
     },
     {
       title: 'Aiqfome Ltda',
@@ -81,6 +92,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 3100,
       date: '2020-04-17T01:04:15Z',
       category: 'alimentação',
+      userId: 1,
     },
     {
       title: 'Amazon.Com.Br',
@@ -88,6 +100,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 28900,
       date: '2020-04-15T02:44:56Z',
       category: 'educação',
+      userId: 1,
     },
     {
       title: 'Aiqfome Ltda',
@@ -95,6 +108,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 2600,
       date: '2020-04-14T00:24:07Z',
       category: 'alimentação',
+      userId: 1,
     },
     {
       title: 'Acom Mkt Place',
@@ -102,6 +116,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 31661,
       date: '2020-04-10T23:47:47Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Pg *Gamers Club',
@@ -109,6 +124,7 @@ exports.seed = (knex) => knex('movement').del()
       value: 2990,
       date: '2020-04-09T02:45:06Z',
       category: 'outros',
+      userId: 1,
     },
     {
       title: 'Amazonprimebr',
@@ -116,5 +132,6 @@ exports.seed = (knex) => knex('movement').del()
       value: 114,
       date: '2020-04-05T19:33:48Z',
       category: 'educação',
+      userId: 1,
     },
   ]));
