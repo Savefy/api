@@ -5,6 +5,8 @@ const router = require('./routes');
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => res.status(200).send('Hello World!'));
 app.use('/api', router);
 app.use(cors({ credentials: true }));
