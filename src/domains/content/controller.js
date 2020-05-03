@@ -30,6 +30,27 @@ const create = async (req, res) => {
   });
 };
 
+const get = async (req, res) => {
+  const { category } = req.query;
+
+  let query = knex('content')
+    .select('*');
+
+  if (category) {
+    query = knex('content')
+      .select('*')
+      .where({ category });
+  }
+
+  const result = await query;
+
+  res.status(200).json({
+    success: true,
+    data: result,
+  });
+};
+
 module.exports = {
   create,
+  get,
 };
