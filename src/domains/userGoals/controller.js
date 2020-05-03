@@ -39,4 +39,28 @@ const getByUser = async (req, res) => {
   });
 };
 
-module.exports = { create, getByUser };
+const credit = async (req, res) => {
+  const {
+    params: { goalId },
+    body: {
+      description,
+      value,
+      date,
+    },
+  } = req;
+
+  const result = await knex('userGoalCredit')
+    .insert({
+      description,
+      value,
+      date,
+      goalId,
+    }).returning('*');
+
+  res.status(201).json({
+    success: true,
+    data: result,
+  });
+};
+
+module.exports = { create, getByUser, credit };
